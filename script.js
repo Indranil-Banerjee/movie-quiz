@@ -15,11 +15,6 @@ answers:["Footloose","Top Gun","Platoon","Wall Street"],
 correct:1
 },
 {
-question:"Which actor starred in Die Hard?",
-answers:["Bruce Willis","Arnold Schwarzenegger","Sylvester Stallone","Kurt Russell"],
-correct:0
-},
-{
 question:"What was the Gremlins mogwai called?",
 answers:["Spike","Stripe","Gizmo","Mog"],
 correct:2
@@ -75,11 +70,6 @@ answers:["Ghostbusters","Gremlins","Big","Beetlejuice"],
 correct:0
 },
 {
-question:"Who played Beetlejuice?",
-answers:["Jack Nicholson","Michael Keaton","Robin Williams","Jeff Goldblum"],
-correct:1
-},
-{
 question:"Which movie starred Patrick Swayze and Jennifer Grey?",
 answers:["Flashdance","Footloose","Dirty Dancing","St Elmo's Fire"],
 correct:2
@@ -88,11 +78,6 @@ correct:2
 question:"Who played Sarah Connor in The Terminator?",
 answers:["Linda Hamilton","Sigourney Weaver","Meg Ryan","Kim Basinger"],
 correct:0
-},
-{
-question:"Which movie featured the quote 'Wax on, wax off'?",
-answers:["Teen Wolf","The Karate Kid","Stand By Me","The Outsiders"],
-correct:1
 },
 {
 question:"Which movie starred Michael Keaton as a bio-exorcist?",
@@ -204,13 +189,13 @@ document
 
 let message = "";
 
-if(score >= 27){
+if(score >= 18){
 message = "🎥 80s Movie Legend!";
 }
-else if(score >= 21){
+else if(score >= 15){
 message = "🍿 Serious Film Buff!";
 }
-else if(score >= 15){
+else if(score >= 12){
 message = "📼 Casual 80s Fan!";
 }
 else{

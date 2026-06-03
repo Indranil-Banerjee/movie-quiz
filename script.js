@@ -126,10 +126,8 @@ progressEl.textContent =
 `Question ${currentQuestion + 1} of ${quiz.length}`;
 
 // update progress bar
-const progressPercent =
-((currentQuestion) / quiz.length) * 100;
-
-progressBar.style.width = progressPercent + "%";
+//const progressPercent = ((currentQuestion) / quiz.length) * 100;
+//progressBar.style.width = progressPercent + "%";
 
 questionEl.textContent = q.question;
 
@@ -166,6 +164,10 @@ score++;
 }
 
 currentQuestion++;
+
+// update progress bar
+const progressPercent = (currentQuestion / quiz.length) * 100;
+progressBar.style.width = progressPercent + "%";
 
 if(currentQuestion < quiz.length){
 loadQuestion();

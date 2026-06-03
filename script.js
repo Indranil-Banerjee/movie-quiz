@@ -5,21 +5,6 @@ answers:["Ghostbusters","Back to the Future","The Goonies","Top Gun"],
 correct:1
 },
 {
-question:"Who played Indiana Jones?",
-answers:["Tom Cruise","Bill Murray","Harrison Ford","Mel Gibson"],
-correct:2
-},
-{
-question:"Which film featured E.T.?",
-answers:["1982","1983","1984","1985"],
-correct:0
-},
-{
-question:"What was the name of the ghost-catching team in Ghostbusters?",
-answers:["Paranormal Squad","Ghostbusters","Spirit Hunters","Phantom Force"],
-correct:1
-},
-{
 question:"Who directed E.T.?",
 answers:["George Lucas","Steven Spielberg","Ridley Scott","James Cameron"],
 correct:1
@@ -33,11 +18,6 @@ correct:1
 question:"Which actor starred in Die Hard?",
 answers:["Bruce Willis","Arnold Schwarzenegger","Sylvester Stallone","Kurt Russell"],
 correct:0
-},
-{
-question:"Which 1984 movie introduced the Terminator?",
-answers:["Aliens","RoboCop","Predator","The Terminator"],
-correct:3
 },
 {
 question:"What was the Gremlins mogwai called?",
@@ -105,11 +85,6 @@ answers:["Flashdance","Footloose","Dirty Dancing","St Elmo's Fire"],
 correct:2
 },
 {
-question:"Which film introduced RoboCop?",
-answers:["Predator","RoboCop","Running Man","Total Recall"],
-correct:1
-},
-{
 question:"Who played Sarah Connor in The Terminator?",
 answers:["Linda Hamilton","Sigourney Weaver","Meg Ryan","Kim Basinger"],
 correct:0
@@ -117,11 +92,6 @@ correct:0
 {
 question:"Which movie featured the quote 'Wax on, wax off'?",
 answers:["Teen Wolf","The Karate Kid","Stand By Me","The Outsiders"],
-correct:1
-},
-{
-question:"Who starred as John Rambo in the 1980s?",
-answers:["Arnold Schwarzenegger","Sylvester Stallone","Bruce Willis","Mel Gibson"],
 correct:1
 },
 {

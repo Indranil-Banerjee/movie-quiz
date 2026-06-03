@@ -110,40 +110,44 @@ let currentQuestion = 0;
 let score = 0;
 let selectedAnswer = null;
 
+const progressBar = document.getElementById("progress-bar");
 const questionEl = document.getElementById("question");
 const answersEl = document.getElementById("answers");
 const progressEl = document.getElementById("progress");
 const nextBtn = document.getElementById("next-btn");
 
-function loadQuestion(){
+function loadQuestion() {
 
 selectedAnswer = null;
 
 const q = quiz[currentQuestion];
 
 progressEl.textContent =
-`Question ${currentQuestion+1} of ${quiz.length}`;
+`Question ${currentQuestion + 1} of ${quiz.length}`;
+
+// update progress bar
+const progressPercent =
+((currentQuestion) / quiz.length) * 100;
+
+progressBar.style.width = progressPercent + "%";
 
 questionEl.textContent = q.question;
 
 answersEl.innerHTML = "";
 
-q.answers.forEach((answer,index)=>{
+q.answers.forEach((answer, index) => {
 
 const btn = document.createElement("button");
 
 btn.textContent = answer;
-
 btn.className = "answer-btn";
 
-btn.onclick = ()=>{
+btn.onclick = () => {
 
-document
-.querySelectorAll(".answer-btn")
-.forEach(b=>b.classList.remove("selected"));
+document.querySelectorAll(".answer-btn")
+.forEach(b => b.classList.remove("selected"));
 
 btn.classList.add("selected");
-
 selectedAnswer = index;
 
 };

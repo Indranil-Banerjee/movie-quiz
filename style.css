@@ -1,3 +1,4 @@
+/*
 body{
     margin:0;
     font-family:Arial, sans-serif;
@@ -7,6 +8,46 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+}
+*/
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    color:white;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #0f172a,
+            #2d1b69
+        );
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+
+    background-image:
+      linear-gradient(
+        rgba(255,79,216,.15) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        90deg,
+        rgba(255,79,216,.15) 1px,
+        transparent 1px
+      );
+
+    background-size:40px 40px;
+
+    pointer-events:none;
 }
 
 .container{

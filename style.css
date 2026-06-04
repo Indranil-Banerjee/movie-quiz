@@ -13,41 +13,21 @@ body{
 
 body{
     margin:0;
-    font-family:Arial,sans-serif;
+    font-family:Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            180deg,
+            #120024 0%,
+            #1e1b4b 40%,
+            #0f172a 100%
+        );
+
     color:white;
     min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    overflow:hidden;
-
-    background:
-        linear-gradient(
-            to bottom,
-            #0f172a,
-            #2d1b69
-        );
-}
-
-body::before{
-    content:"";
-    position:fixed;
-    inset:0;
-
-    background-image:
-      linear-gradient(
-        rgba(255,79,216,.15) 1px,
-        transparent 1px
-      ),
-      linear-gradient(
-        90deg,
-        rgba(255,79,216,.15) 1px,
-        transparent 1px
-      );
-
-    background-size:40px 40px;
-
-    pointer-events:none;
 }
 
 .container{

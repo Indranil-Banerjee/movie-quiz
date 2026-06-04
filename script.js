@@ -1,4 +1,4 @@
-const quiz = [
+const allQuestions = [
 {
 question:"Which 1985 movie featured Marty McFly?",
 answers:["Ghostbusters","Back to the Future","The Goonies","Top Gun"],
@@ -106,6 +106,13 @@ correct:1
 }
 ];
 
+const QUESTIONS_PER_GAME = 10;
+
+// Shuffle and take first 10
+const quiz = [...allQuestions]
+  .sort(() => Math.random() - 0.5)
+  .slice(0, QUESTIONS_PER_GAME);
+
 let currentQuestion = 0;
 let score = 0;
 let selectedAnswer = null;
@@ -193,23 +200,23 @@ document
 .textContent =
 `${score} / ${quiz.length}`;
 
+const percentage = Math.round((score / quiz.length) * 100);
 let message = "";
 
-if(score >= 18){
-message = "🎥 80s Movie Legend!";
+if (percentage >= 90) {
+  message = "🎥 80s Movie Legend!";
 }
-else if(score >= 15){
-message = "🍿 Serious Film Buff!";
+else if (percentage >= 75) {
+  message = "🍿 Serious Film Buff!";
 }
-else if(score >= 12){
-message = "📼 Casual 80s Fan!";
+else if (percentage >= 50) {
+  message = "📼 Casual 80s Fan!";
 }
-else{
-message = "📺 Time for an 80s movie marathon!";
+else {
+  message = "📺 Time for an 80s movie marathon!";
 }
 
-document.getElementById("message").textContent =
-message;
+document.getElementById("message").textContent = message;
 
 }
 
